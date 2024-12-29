@@ -1,3 +1,4 @@
+//userController.js
 export const getAdminContent = (req, res) => res.send("Welcome, Admin!");
 export const getTutorContent = (req, res) => res.send("Welcome, Tutor!");
 export const getStudentContent = (req, res) => res.send("Welcome, Student!");

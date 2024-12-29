@@ -1,3 +1,4 @@
+//coursesController.js
 import Chapter from "../models/chapterModel.js";
 import Course from "../models/courseModel.js";
 import contentModel from "../models/contentModel.js";
@@ -69,7 +70,7 @@ export const getCourseDetails = async (req, res) => {
 export const getCourseById = async (req, res) => {
   try {
     const course = await Course.findById(req.params.id)
-      .populate("chapters") // Populate specific chapter fields
+      .populate("chapters",) // Populate chapter fields") // Populate specific chapter fields
       .populate("contents") // Populate content fields
       .populate("quizzes") // Populate quiz fields
       .populate("createdBy", "name email role"); // Include creator details

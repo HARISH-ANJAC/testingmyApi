@@ -1,3 +1,4 @@
+//authRoutes.js
 import express from "express";
 import { registerUser, loginUser, forgetpassword } from "../controllers/authController.js";
 

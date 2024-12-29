@@ -1,3 +1,4 @@
+//courseRoutes.js
 import express from "express";
 import multer from "multer";
 import { protect } from "../middlewares/authMiddleware.js";
