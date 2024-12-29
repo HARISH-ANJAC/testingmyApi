@@ -7,6 +7,7 @@ import userRoutes from "./routes/userRoutes.js";
 import coursesrouter from "./routes/courseRoutes.js";
 import categoryRouter from "./routes/categoryRoutes.js";
 import catalyst from "zcatalyst-sdk-node";
+import cors from "cors";
 
 dotenv.config();
 
@@ -17,7 +18,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use("/uploads", express.static("uploads"));
 app.use(express.json());
-
+app.use(cors());
 // Connect to MongoDB
 connectDB();
 
